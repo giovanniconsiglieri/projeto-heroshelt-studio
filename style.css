@@ -5,6 +5,13 @@
     font-family: "Chakra Petch", sans-serif;
 }
 
+body {
+    background-image: url(./assets/Background-site-hss.png);
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
 .topo {
     display: flex;
     align-items: center;
@@ -13,7 +20,7 @@
     /* centraliza horizontalmente na tela */
     gap: 50px;
     /* espaço entre o logo e o header */
-    margin-top: 20px;
+    background-color: white;
 }
 
 /* Logo */
@@ -44,7 +51,7 @@
 .header-button {
     font-size: 18px;
     color: white;
-    background-color: rgb(136, 20, 20);
+    background-color: rgb(252, 0, 0);
     width: 64px;
     height: 28px;
     cursor: pointer;
@@ -55,35 +62,69 @@
 .header-button:hover {
     font-size: 21px;
     color: white;
-    background-color: rgb(189, 44, 44);
+    background-color: rgb(189, 0, 0);
     width: 70px;
     height: 32px;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.1s;
 }
+
+.header-button:active {
+    font-size: 21px;
+    color: white;
+    background-color: rgb(218, 67, 67);
+    width: 70px;
+    height: 32px;
+    transition: ease-in-out 0.1s;
+}
+
 
 h1 {
     font-size: 54px;
     font-weight: 900;
     width: 850px;
     margin: 20px 500px;
+    color: rgb(168, 0, 0);
 }
 
 .mais-vendidos-head {
-    margin-left: 500px;
+    margin-left: 450px;
     margin-top: 60px;
     margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.quadro-spiderman {
+    display: inline-block;
+    width: 600px;
 }
 
 .quadro-homem-aranha-aquarela {
-    height: 300px;
-    margin-left: 425px;
+    display: inline-block;
+    height: 340px;
+    margin-left: 400px;
 }
 
 .titulo-quadro-homem-aranha-aquarela {
-    margin-left: 460px;
+    font-size: 22px;
+    margin-left: 450px;
 }
 
 .p-homem-aranha-aquarela {
-    margin-left: 460px ;
-    width: 250px;
+    display: inline-block;
+    margin-left: 450px;
+    width: 275px;
+}
+
+.quadro-ironman {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+.quadro-ironman {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    margin-left: 150px;
 }
