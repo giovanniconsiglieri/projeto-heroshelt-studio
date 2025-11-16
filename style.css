@@ -7,6 +7,7 @@
 
 body {
     background-image: url(./assets/Background-site-hss.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../assets/Background-site-hss.png);
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
@@ -15,27 +16,22 @@ body {
 .topo {
     display: flex;
     align-items: center;
-    /* centraliza verticalmente logo + header */
     justify-content: center;
-    /* centraliza horizontalmente na tela */
     gap: 50px;
-    /* espaço entre o logo e o header */
     background-color: white;
+    height: 105px;
 }
 
-/* Logo */
 .site-logo {
     height: 150px;
 }
 
-/* Header (os links) */
 .header {
     display: flex;
     gap: 40px;
     align-items: center;
 }
 
-/* Ajuste visual dos links */
 .link-header {
     text-decoration: none;
     font-size: 18px;
@@ -44,8 +40,13 @@ body {
 
 .link-header:hover {
     font-size: 21px;
+    color: rgb(83, 83, 83);
+}
+
+.link-header:active {
+    font-size: 21px;
     transition: ease-in-out 0.3s;
-    color: rgb(61, 61, 61);
+    color: rgb(173, 172, 172);
 }
 
 .header-button {
@@ -65,7 +66,7 @@ body {
     background-color: rgb(189, 0, 0);
     width: 70px;
     height: 32px;
-    transition: ease-in-out 0.1s;
+    transition: 0.1s;
 }
 
 .header-button:active {
@@ -79,52 +80,97 @@ body {
 
 
 h1 {
-    font-size: 54px;
+    font-size: 62px;
     font-weight: 900;
-    width: 850px;
-    margin: 20px 500px;
-    color: rgb(168, 0, 0);
+    width: 1000px;
+    margin: 30px 500px;
+    color: rgb(50, 214, 0);
 }
 
-.mais-vendidos-head {
-    margin-left: 450px;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    font-size: 36px;
+.mais-vendidos {
+    padding: 30px 20px;
+    background: #111;
+    color: white;
 }
 
-.quadro-spiderman {
-    display: inline-block;
-    width: 600px;
+.mais-vendidos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0f0;
+    text-transform: uppercase;
 }
 
-.quadro-homem-aranha-aquarela {
-    display: inline-block;
-    height: 340px;
-    margin-left: 400px;
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.titulo-quadro-homem-aranha-aquarela {
-    font-size: 22px;
-    margin-left: 450px;
+.card-produto {
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.p-homem-aranha-aquarela {
-    display: inline-block;
-    margin-left: 450px;
-    width: 275px;
+.card-produto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 255, 0, 0.2);
 }
 
-.quadro-ironman {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
+.card-produto img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
 }
 
-.quadro-ironman {
-    display: inline-block;
-    height: 300px;
-    width: 300px;
-    margin-left: 150px;
+.card-produto h3 {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #fff;
+    height: 40px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.preco-antigo {
+    font-size: 0.9rem;
+    color: #888;
+    text-decoration: line-through;
+    margin: 4px 0;
+}
+
+.preco-atual {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0f0;
+    margin: 4px 0;
+}
+
+.parcelamento {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin: 6px 0 10px;
+}
+
+.desconto {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #0f0;
+    color: #000;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
