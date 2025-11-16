@@ -7,7 +7,7 @@
 
 body {
     background-image: url(./assets/Background-site-hss.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../assets/Background-site-hss.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84)), url(../assets/Background-site-hss.png);
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
@@ -40,12 +40,13 @@ body {
 
 .link-header:hover {
     font-size: 21px;
-    color: rgb(83, 83, 83);
+    color: rgb(114, 113, 113);
+    transition: ease-in-out 0.3s;
 }
 
 .link-header:active {
     font-size: 21px;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out;
     color: rgb(173, 172, 172);
 }
 
@@ -78,7 +79,6 @@ body {
     transition: ease-in-out 0.1s;
 }
 
-
 h1 {
     font-size: 62px;
     font-weight: 900;
@@ -89,7 +89,7 @@ h1 {
 
 .mais-vendidos {
     padding: 30px 20px;
-    background: #111;
+    background: rgb(18, 18, 18, .9);
     color: white;
 }
 
@@ -173,4 +173,12 @@ h1 {
     font-size: 0.8rem;
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+#logo-whats {
+    display: flex;
+    position: fixed;
+    margin-top: 750px;
+    margin-left: 1780px;
+    height: 50px;
 }
